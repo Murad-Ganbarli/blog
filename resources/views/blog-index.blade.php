@@ -9,6 +9,7 @@
 </head>
 <body>
 <h1>All Blogs</h1>
+<a href="{{route('blogs.create')}}">Create a new Blog</a><br>
 
 @foreach($blogs as $blog)
     <div style="margin-bottom: 24px; border: 1px solid black; width: 90px;">
@@ -25,6 +26,5 @@
         </form>
     </div>
 @endforeach
-<a href="{{route('blogs.create')}}">Create a new Blog</a>
 </body>
 </html>

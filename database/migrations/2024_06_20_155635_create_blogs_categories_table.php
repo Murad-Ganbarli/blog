@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
 
             $table->foreignId('blog_id')->constrained();
-            $table->foreignId('category_id')->constrained();
+            $table->foreignId('category_id')->constrained();    
             $table->timestamps();
         });
     }
